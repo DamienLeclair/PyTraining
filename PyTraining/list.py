@@ -76,6 +76,48 @@ def integer_division(a, b):
     modulo = a % b
     return i_p, modulo
 
-i_p, modulo = integer_division(3, 2)
+
+i_p, modulo = integer_division(5, 3)
 print("[{},{}]".format(i_p, modulo))
 
+# string to list
+string = "hello world and sunshine"
+splitted_string = string.split(' ')
+print(splitted_string)
+
+# list to string
+array = ['hello', 'world', 'and', 'sunshine']
+joined_string = ' '.join(array)
+print(joined_string)
+
+
+def print_float(float_value, nb_decimal):
+
+    if type(float_value) is not float:
+        raise TypeError("float_value must be a type of float")
+    if type(nb_decimal) is not int:
+        raise TypeError("nb_decimal must be a type of int")
+
+    str_value = str(float_value)
+    entire_part, float_part = str_value.split('.')
+
+    print(",".join([entire_part, float_part[:nb_decimal]]))
+
+print_float(3.99999999999999, 2)
+
+
+def n_parameters_func(*parameters):
+    print("parameters : {}".format(parameters))
+
+n_parameters_func('a', 'b', 'c', 'd')
+abc_list = ['a', 'b', 'c']
+n_parameters_func(*abc_list)
+
+# list comprehensions
+list1 = [0, 1, 2, 3, 4, 5]
+list2 = [nb * nb for nb in list1]
+print(list2)
+
+list1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list2 = [nb for nb in list1 if nb % 2 == 0]
+print(list2)
