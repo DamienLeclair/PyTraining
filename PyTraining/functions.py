@@ -1,6 +1,8 @@
 __author__ = 'dleclair'
 
+# -----------------------------
 # Classical function definition
+# -----------------------------
 
 def print_table(nb, max=10):
     """Here is the doc of the function
@@ -19,7 +21,9 @@ help(print_table)
 
 print(square(3))
 
+# --------------------------
 # Lambda function definition
+# --------------------------
 
 square_lambda = lambda x : x * x
 

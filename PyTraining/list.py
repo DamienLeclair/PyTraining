@@ -1,6 +1,8 @@
 __author__ = 'dleclair'
 
+# ------------------
 # list instanciation
+# ------------------
 list1 = list()
 print(type(list1))
 
@@ -17,7 +19,9 @@ int_list.append(56)
 int_list.insert(2, 0)
 print(int_list)
 
+# -------------
 # concatenation
+# -------------
 list1 = [1, 2, 3]
 list2 = [4, 5, 6]
 list1.extend(list2)
@@ -33,7 +37,9 @@ list2 = [4, 5, 6]
 list1 += list2
 print(list1)
 
+# ------------
 # del key word
+# ------------
 var = 1
 print(var)
 del var
@@ -47,7 +53,9 @@ list1 = [1, 2, 3]
 list1.remove(3)  # take the element
 print(list1)
 
+# ----------------
 # list enumeration
+# ----------------
 list1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 for i, elt in enumerate(list1):
     print("Index {0} : value {1}".format(i, elt))
@@ -65,7 +73,9 @@ list2 = [
 for nb, char in list2:
     print("[{};{}]".format(nb, char))
 
+# ------------------
 # tuple introduction
+# ------------------
 empty_tuple = ()
 empty_tuple = (1,)
 empty_tuple = (1, 2,)
@@ -80,12 +90,16 @@ def integer_division(a, b):
 i_p, modulo = integer_division(5, 3)
 print("[{},{}]".format(i_p, modulo))
 
+# --------------
 # string to list
+# --------------
 string = "hello world and sunshine"
 splitted_string = string.split(' ')
 print(splitted_string)
 
+# --------------
 # list to string
+# --------------
 array = ['hello', 'world', 'and', 'sunshine']
 joined_string = ' '.join(array)
 print(joined_string)
