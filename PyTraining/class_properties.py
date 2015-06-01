@@ -1,7 +1,7 @@
 __author__ = 'dleclair'
 
 
-class Character:
+class Person:
     def __init__(self, first_name, last_name):
         self.first_name = first_name
         self.last_name = last_name
@@ -16,7 +16,7 @@ class Character:
 
     birth_city = property(_get_birth_city, _set_birth_city)
 
-me = Character("Damien", "Leclair")
+me = Person("Damien", "Leclair")
 print(me.birth_city)
 me.birth_city = "Evry"
 print(me.birth_city)

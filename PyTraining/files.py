@@ -18,14 +18,14 @@ my_file.close()
 # ---------------
 # write in a file
 # ---------------
-my_file = open("file.txt", 'w')
+my_file = open("Temp/file.txt", 'w')
 my_file.write("hello world")
 my_file.close()
 
 # -----------
 # using block
 # -----------
-with open("file.txt", 'r') as my_file:
+with open("Temp/file.txt", 'r') as my_file:
     print("Is my_file closed = {}".format(my_file.closed))
 
 print("Is my_file closed = {}".format(my_file.closed))
@@ -35,11 +35,11 @@ user = {
     "last_name": "Leclair"
 }
 
-with open("data", 'wb') as file:
+with open("Temp/data", 'wb') as file:
     my_pickler = pickle.Pickler(file)
     my_pickler.dump(user)
 
-with open("data", 'wb') as file:
+with open("Temp/data", 'wb') as file:
     my_unpickler = pickle.Unpickler(file)
     user_data = my_unpickler.load()
     print(user_data)

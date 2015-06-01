@@ -133,6 +133,3 @@ print(t1 + 30)
 print(30 + t1)
 t1 += 20
 print(t1)
-
-
-# Useful methods for pickle
