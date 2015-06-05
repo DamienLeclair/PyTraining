@@ -38,4 +38,5 @@ print(re.sub(regex, replace, text))
 # --------------------
 
 
-
+pwd_check = r"^[A-Za-z0-9]{6,}$"
+regex = re.compile(pwd_check)

@@ -34,7 +34,7 @@ my_function()
 # Decorator with parameters
 # -------------------------
 
-import time
+import time_lib
 
 
 def elapsed_time(sec_count):
@@ -42,9 +42,9 @@ def elapsed_time(sec_count):
     def decorator(function):
 
         def calculate_elapsed_time(*not_named_params, **named_params):
-            start = time.time()
+            start = time_lib.time()
             result = function(*not_named_params, **named_params)  # keep parameters of the called function
-            stop = time.time()
+            stop = time_lib.time()
             elapsed = stop - start
 
             if elapsed > sec_count:
